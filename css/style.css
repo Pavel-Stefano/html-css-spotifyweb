@@ -1,0 +1,153 @@
+/* reset */
+
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.debug {
+    border: 1px solid black;
+}
+
+.padding-left20{
+    padding-left:20px;
+}
+
+.padding-bottom5 {
+    padding-bottom: 5px;
+}
+
+body {
+    background-color: black;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+}
+
+.wrapper-content {
+    width: 100%;
+    height: calc(100% - 80px);
+    background-color: blue;
+}
+
+/* aside */
+aside {
+    width: 230px;
+    background-color: black;
+    padding-top: 20px;
+    color: white;
+    position: relative;
+}
+
+#logo-con-scritta {
+    width: 150px;
+    margin-bottom: 30px;
+    padding-left:20px;
+}
+
+aside li {
+    list-style-type: none;
+}
+
+.selection li:hover {
+    border-left:1px solid yellowgreen;
+}
+
+/* lista playlist */
+.playlist-list li:first-child {
+    padding-bottom: 10px;
+}
+
+aside li a{
+    text-decoration: none;
+    color: grey;
+}
+
+aside li a:hover{
+    color: white;
+}
+
+aside li img {
+    width: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+aside h3 {
+    padding: 10px 0;
+}
+aside ul li span {
+    font-size: 30px;
+    padding: 4px 14px;
+    background: grey;
+    vertical-align: middle;
+    color: black;
+}
+
+/* download e profilo */
+.aside-footer {
+    width: 90%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+#profilo {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#profilo img {
+    width: 100%;
+    object-fit: cover;
+    fill: white;
+}
+
+.aside-footer span{
+    position: relative;
+    bottom: 10px;
+}
+/*  / aside */
+
+
+/* main */
+main {
+    width: calc(100% - 230px);
+    background-color: aqua;
+}
+
+nav.top {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.main-content {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto ;
+    padding-top: 80px;
+}
+
+footer {
+    height: 80px;
+    width: 100%;
+    background-color: #282828;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+}
