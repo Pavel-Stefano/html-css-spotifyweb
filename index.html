@@ -10,26 +10,29 @@
 <body>
     <div class="wrapper">
         <div class="wrapper-content container-flex">
-            <aside>
-                <img id="logo-con-scritta" src="img/logo.svg" alt="logo-con-scritta">
-                <ul class="selection">
-                    <li class="padding-left20 padding-bottom5"><a href="#"><img src="img/home.svg" alt="home">Home</a></li>
-                    <li class="padding-left20 padding-bottom5"><a href="#"><img src="img/search.svg" alt="search">Cerca</a></li>
-                    <li class="padding-left20 padding-bottom5"><a href="#"><img src="img/libreria.svg" alt="libreria">La tua libreria</a></li>
-                </ul>
+            <aside class="container-flex">
+                <div class="container-selection">
+                    <img id="logo-con-scritta" src="img/logo.svg" alt="logo-con-scritta">
+                    <ul class="selection">
+                        <li class="padding-left20 padding-bottom5"><a href="#"><img src="img/home.svg" alt="home">Home</a></li>
+                        <li class="padding-left20 padding-bottom5"><a href="#"><img src="img/search.svg" alt="search">Cerca</a></li>
+                        <li class="padding-left20 padding-bottom5"><a href="#"><img src="img/libreria.svg" alt="libreria">La tua libreria</a></li>
+                    </ul>
 
-                <!-- playlist -->
-                <h3 class="padding-left20">Playlist</h3>
-                <ul class="playlist-list">
-                    <li class="padding-left20 padding-bottom5"><a href="#"><span>+</span> Crea Playlist</a></li>
-                    <li class="padding-left20 padding-bottom5"><a href="#">Nome Playlist</a></li>
-                    <li class="padding-left20 padding-bottom5"><a href="#">Nome Playlist</a></li>
-                    <li class="padding-left20 padding-bottom5"><a href="#">Nome Playlist</a></li>
-                    <li class="padding-left20 padding-bottom5"><a href="#">Nome Playlist</a></li>
-                    <li class="padding-left20 padding-bottom5"><a href="#">Nome Playlist</a></li>
-                    <li class="padding-left20 padding-bottom5"><a href="#">Nome Playlist</a></li>
-                    <li class="padding-left20 padding-bottom5"><a href="#">Nome Playlist</a></li>
-                </ul>
+                    <!-- playlist -->
+                    <h3 class="padding-left20">Playlist</h3>
+                    <ul class="playlist-list">
+                        <li class="padding-left20 padding-bottom5"><a href="#"><span>+</span> Crea Playlist</a></li>
+                        <li class="padding-left20 padding-bottom5"><a href="#">Nome Playlist</a></li>
+                        <li class="padding-left20 padding-bottom5"><a href="#">Nome Playlist</a></li>
+                        <li class="padding-left20 padding-bottom5"><a href="#">Nome Playlist</a></li>
+                        <li class="padding-left20 padding-bottom5"><a href="#">Nome Playlist</a></li>
+                        <li class="padding-left20 padding-bottom5"><a href="#">Nome Playlist</a></li>
+                        <li class="padding-left20 padding-bottom5"><a href="#">Nome Playlist</a></li>
+                        <li class="padding-left20 padding-bottom5"><a href="#">Nome Playlist</a></li>                        
+                    </ul>
+                </div>
+                
 
                 <!-- download e profilo -->
                 <aside class="aside-footer padding-left20">
@@ -46,12 +49,140 @@
             </aside>
 
             <main>
-                <nav class="top">
+                <nav class="top clearfix">
+                    <div class="upgrade">
+                        <a href="#">effettua l'upgrade</a>
+                    </div>
+
 
                 </nav>
-                <div class="main-content">
+                <div class="main-content padding-left20">
+                    <nav>
+                        <li><a href="#">in evidenza</a></li>
+                        <li><a href="#">podcast</a></li>
+                        <li><a href="#">classifiche</a></li>
+                        <li><a href="#">generi e mood</a></li>
+                        <li><a href="#">nuove uscite</a></li>
+                        <li><a href="#">scopri</a></li>
+                    </nav>
+
+                    <h2>Recently player</h2>
+
+                    <!-- albums -->
+                    <div class="container-albums container-flex">
+                        <div class="card">
+                            <div class="box-img">
+                                <img src="img/metal_lifting.jpg" alt="">
+                            </div>
+                            <div class="box-text">
+                                <p>HEAVY METAL<p>
+                                <span>Subtitle</span>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <div class="box-img">
+                                <img src="img/stranger.jpeg" alt="">
+                            </div>
+                            <div class="box-text">
+                                <p>Stranger Things,Vol. 1 (a Netflix Original Series Soundtrack)</p>
+                                <span>Subtitle</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="box-img">
+                                <img src="img/aquietplace.jpeg" alt="">
+                            </div>
+                            <div class="box-text">
+                                <p>A quiet place</p>
+                                <span>Subtitle</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="box-img">
+                                <img src="img/split.jpeg" alt="">
+                            </div>
+                            <div class="box-text">
+                                <p>Split</p>
+                                <span>Subtitle</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="box-img">
+                                <img src="img/cure.jpeg" alt="">
+                            </div>
+                            <div class="box-text">
+                                <p>A cure for wellness</p>
+                                <span>Subtitle</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="box-img">
+                                <img src="img/sinister.jpeg" alt="">
+                            </div>
+                            <div class="box-text">
+                                <p>Sinister</p>
+                                <span>Subtitle</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- playlist -->
+                    <h2>Creato per John Doe</h2>
+                    <span class="suggerimenti">Più ascolti, più accurati saranno i suggerimenti</span>
+
+                    <div class="container-playlist container-flex">
+                        <div class="card">
+                            <div class="box-img">
+                                <img src="img/radar.jpeg" alt="">
+                            </div>
+                            <div class="box-text">
+                                <p>Release Radar<p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="box-img">
+                                <img src="img/mixdaily.jpeg" alt="">
+                            </div>
+                            <div class="box-text">
+                                <p>Daily Mix 1<p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Più popolari -->
+                    <h2>Artisti più popolari</h2>
+                    <span class="suggerimenti">Più ascolti, più accurati saranno i suggerimenti</span>
+
+                    <div class="container-popolari container-flex">
+                        <div class="card">
+                            <div class="box-img">
+                                <img src="img/youg.jpeg" alt="">
+                            </div>
+                            <div class="box-text">
+                                <p>Release Radar<p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="box-img">
+                                <img src="img/einaudi.jpeg" alt="">
+                            </div>
+                            <div class="box-text">
+                                <p>Daily Mix 1<p>
+                            </div>
+                        </div>
+                    </div>
+
+
 
                 </div>
+
 
             </main>
 

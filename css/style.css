@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    color: white;
+}
+
 .debug {
     border: 1px solid black;
 }
@@ -18,12 +22,14 @@
     padding-bottom: 5px;
 }
 
-body {
-    background-color: black;
-}
-
 .container-flex {
     display: flex;
+}
+
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .wrapper {
@@ -44,6 +50,8 @@ aside {
     padding-top: 20px;
     color: white;
     position: relative;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #logo-con-scritta {
@@ -61,6 +69,7 @@ aside li {
 }
 
 /* lista playlist */
+
 .playlist-list li:first-child {
     padding-bottom: 10px;
 }
@@ -94,9 +103,6 @@ aside ul li span {
 /* download e profilo */
 .aside-footer {
     width: 90%;
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
 }
 
 #profilo {
@@ -125,23 +131,108 @@ aside ul li span {
 /* main */
 main {
     width: calc(100% - 230px);
-    background-color: aqua;
+    background-color: #262626;
 }
 
+/* nav-top */
 nav.top {
-    width: 100%;
+    width: calc(100% - 230px);
     height: 80px;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 1000;
 }
 
+.upgrade {
+    float: right;
+    margin: 25px;
+}
+
+.upgrade a {
+    border: 1px solid white;
+    text-decoration: none;
+    padding: 10px 35px;
+    border-radius: 50px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+/* main-content */
 .main-content {
     height: 100%;
     width: 100%;
     overflow-y: auto ;
     padding-top: 80px;
+    font-size: 14px;
 }
+
+/* barra navigazione */
+.main-content nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-content nav li {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+.main-content nav li:hover {
+    border-bottom:1px solid yellowgreen;
+}
+
+.main-content nav li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+/* albums */
+.container-albums {
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(100% / 6);
+    padding: 20px 10px 20px 0;
+    min-width: 150px;
+}
+
+.card .box-img img {
+    width: 100%;
+}
+
+.box-text {
+    text-align: center;
+}
+
+.box-text p{
+    padding: 5px 0;
+}
+
+.main-content span{
+    color: grey;
+}
+
+.suggerimenti {
+    display: inline-block;
+    padding: 5px 0;
+}
+
+/* box Artisti popolari */
+.container-popolari .box-img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+
+
+
 
 footer {
     height: 80px;
