@@ -349,6 +349,41 @@ footer {
 
 .bar-overflow hr{
     width: 7vw;
-    border: 3px solid grey;
+    border: 3px solid white;
     z-index: 100;
+}
+
+.bar-right li{
+    display: inline-block;
+    line-height: 80px;
+}
+
+.bar-right li a{
+    color: white;
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+.barra {
+    position: relative;
+    top: 38px;
+}
+
+.barra hr {
+    width: 80px;
+    border: 3px solid rgb(75, 73, 73);
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.barra-overfow {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.barra-overfow hr {
+    width: 50px;
+    border: 3px solid white;
 }
