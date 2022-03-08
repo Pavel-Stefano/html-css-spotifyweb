@@ -33,6 +33,13 @@ body {
     clear: both;
 }
 
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
 .wrapper {
     height: 100vh;
     width: 100%;
@@ -150,7 +157,6 @@ nav.top {
 }
 
 .upgrade {
-    float: right;
     margin: 25px;
 }
 
@@ -315,6 +321,34 @@ footer {
 #play {
     font-size: 30px;
     position: relative;
-    top: 8px;
+    top: 6px;
 }
 
+.center-down {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.download-bar hr {
+    width: 40vw;
+    border: 3px solid rgb(75, 73, 73);
+    border-radius: 10px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.download-bar {
+    position: relative;
+}
+
+.bar-overflow {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bar-overflow hr{
+    width: 7vw;
+    border: 3px solid grey;
+    z-index: 100;
+}
