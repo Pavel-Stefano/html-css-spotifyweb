@@ -7,7 +7,6 @@
     }
     .bar-right{
         padding: 0;
-        min-width: 140px;
     }
 }
 
@@ -16,4 +15,25 @@
         width: calc(100% / 2);
         padding: 20px 10px 20px 0;
     }
+    .bar-right{
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-width: 80px;
+    }
 }
+
+@media screen and (max-width: 576px) {
+    .card-mini .box-img {
+        margin-right: 5px;
+        min-width: 40px;
+    }
+    .card-mini .icone-left {
+        margin-left: 1vw;
+    }
+    .icone-left li {
+        font-size: 10;
+        max-width: 20px;
+    }
+    
+}
+

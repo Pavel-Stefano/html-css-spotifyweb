@@ -83,11 +83,6 @@ aside li, .icone-left li {
 
 /* lista playlist */
 
-/* .container-playlist {
-    width: 100%;
-    height: 250px;
-} */
-
 .playlist-list li:first-child {
     padding-bottom: 10px;
 }
@@ -168,7 +163,7 @@ nav.top {
 .upgrade a {
     border: 1px solid white;
     text-decoration: none;
-    padding: 10px 35px;
+    padding: 3vh 3vw;
     border-radius: 50px;
     color: white;
     text-transform: uppercase;
@@ -301,10 +296,10 @@ footer {
 .player-bar {
     width: 100%;
     height: 100%;
+    justify-content: space-between;
 }
 
 .bar-left, .bar-right {
-    width: 20%;
     padding: 0 15px;
 }
 
@@ -318,7 +313,7 @@ footer {
 .card-mini .box-img {
     width: 50px;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 1vw;
     min-width: 50px;
 }
 
@@ -340,7 +335,7 @@ footer {
 }
 
 .icone-left li {
-    font-size: 20px;
+    font-size: 1em;
     display: inline-block;
 }
 
@@ -349,9 +344,6 @@ footer {
 }
 
 /* bar center */
-.bar-center {
-    width: 60%;
-}
 
 .center-up {
     text-align: center;
@@ -359,7 +351,7 @@ footer {
 
 .center-up li {
     display: inline-block;
-    font-size: 1.5vw;
+    font-size: 20px;
     padding: 0 2vw;
 }
 
@@ -372,7 +364,7 @@ footer {
 }
 
 #play {
-    font-size: 2.5vw;
+    font-size: 30px;
     position: relative;
     top: 6px;
 }
@@ -380,6 +372,8 @@ footer {
 .center-down {
     margin: 0 auto;
     margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .download-bar hr {
@@ -406,9 +400,13 @@ footer {
     z-index: 100;
 }
 
+.bar-right {
+    display: flex;
+    align-items: center;
+}
+
 .bar-right li{
     display: inline-block;
-    line-height: 80px;
 }
 
 .bar-right li a{
@@ -419,7 +417,6 @@ footer {
 
 .barra {
     position: relative;
-    top: 38px;
 }
 
 .barra hr {
