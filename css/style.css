@@ -381,11 +381,11 @@ footer {
     border: 3px solid rgb(75, 73, 73);
     border-radius: 10px;
     margin: 0 2vw;
-    cursor: pointer;
 }
 
 .download-bar {
     position: relative;
+    cursor: pointer;
 }
 
 .bar-overflow {
@@ -394,10 +394,30 @@ footer {
     left: 0;
 }
 
+.bar-overflow-circle {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    background: greenyellow;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateY(-30%);
+}
+
+.bar-overflow:hover .bar-overflow-circle {
+    opacity: 1;
+}
+
 .bar-overflow hr{
     width: 7vw;
     border: 3px solid white;
     z-index: 100;
+}
+
+.bar-overflow:hover hr {
+    border: 3px solid greenyellow;
 }
 
 .bar-right {
@@ -435,4 +455,24 @@ footer {
 .barra-overfow hr {
     width: 40px;
     border: 3px solid white;
+}
+
+.barra-overfow:hover hr {
+    border: 3px solid greenyellow;
+}
+
+.barra-overfow-circle-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: greenyellow;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateY(-30%);
+}
+
+.barra-overfow:hover .barra-overfow-circle-2 {
+    opacity: 1;
 }
